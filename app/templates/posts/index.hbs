@@ -1,0 +1,9 @@
+{{#each model as |post|}}
+<div>
+    <h4>{{#link-to "posts.view" post.id}}{{post.title}}{{/link-to}}</h4>
+
+    {{#link-to "posts.update" post.id}}atualizar{{/link-to}}
+    {{#link-to "posts.destroy" post.id}}remover{{/link-to}}
+    <hr/>
+</div>
+{{/each}}

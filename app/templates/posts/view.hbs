@@ -1,0 +1,8 @@
+{{#each model as |post|}}
+<div>
+    <h4>{{post.title}}</h4>
+    {{post.body}}
+</div>
+{{/each}}
+
+{{#link-to "posts.index"}}voltar{{/link-to}}

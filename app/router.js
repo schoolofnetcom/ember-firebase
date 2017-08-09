@@ -7,6 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('posts', function() {
+    this.route('create');
+    this.route('view', {path: 'view/:id'});
+    this.route('update', {path: 'update/:id'});
+    this.route('destroy', {path: 'destroy/:id'});
+  })
 });
 
 export default Router;
